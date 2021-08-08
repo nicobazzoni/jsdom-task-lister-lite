@@ -4,25 +4,44 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script defer src="./src/index.js"></script>
 </head>
 <body>
+  <div class = "jumbotron">
   <div id="main-content">
-    <h1>Task Lister Lite™️</h1>
-
+    <h1>Nico's Task Master™️</h1>
+   
+    <link rel="stylesheet" href="clock2.css">
+</head>
+<body>
+    <div id="clock">8:10:45</div>
+  
+    <script src="clock2.js"></script>
+   <br>
     <form id="create-task-form" action="#" method="post">
-      <label for="new-task-description">Task description:</label>
+      <label for="new-task-description">To-do:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
-      <input type="submit" value="Create New Task">
+      <label for="priority">priority:</label>
+      <select name="priority" id="new-task-priority">
+        <option value="green">meh</option>
+        <option value="yellow">get to it</option>
+        <option value="red">Due Yesterday!</option>
+      </select>
+    
+      <input type="submit" value="Post Task">
+      
     </form>
 
     <div id="list">
-      <h2>My Todos</h2>
+      <h2>To Do</h2>
       <ul id="tasks">
+        
       </ul>
     </div>
 
-    <script src="./src/index.js"></script>
+   
   </div>
-
+</div>
 </body>
 </html>

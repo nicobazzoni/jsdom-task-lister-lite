@@ -1,17 +1,17 @@
 html {
   height: 100%;
   width: 100%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: "helvetica";
 }
 
 body {
   min-height: 100%;
   min-width: 100%;
-  background: linear-gradient(pink, violet);
+  background: rgb(0, 0, 0);
 }
 
 button {
-  font-size: 7px;
+  font-size: 10px;
 }
 
 #main-content {
@@ -20,18 +20,40 @@ button {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.3);
+  
+  background: rgb(255, 255, 255);
   padding: 15px 20px 18px 18px;
-  border-radius: 5px;
-  box-shadow: 2px 5px 5px #333;
+ 
+  
 }
 
 #list {
   margin: 10px;
-  border: 1px solid #333;
-  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgb(0, 0, 0);
+  background: rgba(0, 119, 255, 0.75);
   padding: 15px 20px 18px 18px;
-  border-radius: 5px;
+  
   box-shadow: 2px 5px 5px #333;
 }
+
+.green {
+  background-color: rgb(144, 203, 238)
+}
+
+.yellow {
+  background-color: yellow
+}
+
+.red {
+  background-color: red
+}
+
+#clock2 {
+  font-size: 200px;
+  width: 900px;
+  margin: 200px;
+  text-align: center;
+  border: 5px solid black;
+  border-radius: 20px;
+  }
+  
